@@ -5,16 +5,41 @@
 // -- use the setTimeOut() function to set up a runninig clock as well as set a time for the gif to show up after each question has been answered
 // -- create and array of objects for the questions.  Each object will have the question, the possible answers and a gif corresonding to the right or wrong answer
 
+
+var number = 30;
+var intervalId = false;
+
+function run(){
+	if(!intervalId){
+		intervalId = setInterval(decrement, 1000)
+	}return;
+}
+
+function decrement(){
+	number--;
+	$('#seconds').html(number);
+	if (number <= 0){
+		stop();
+	}
+}
+
+function stop(){
+	clearInterval(intervalId);
+	intervalId = false;
+}
+
+run();
+
 var seinfeld = {
 
 	data:[
-		{
-			question: "What episode is played backwards, from end to beginning?",
-			correctAnswer: "The Betrayal",
-			answerA: "The Maid",
-			answerB: "The Blood",
-			answerC: "The Butter Shave"
-		},
+		// {
+		// 	question: "What episode is played backwards, from end to beginning?",
+		// 	correctAnswer: "The Betrayal",
+		// 	answerA: "The Maid",
+		// 	answerB: "The Blood",
+		// 	answerC: "The Butter Shave"
+		// },
 		{
 			question: "In the episode 'The Betrayal' who did elaine sleep with before the trip?",
 			answerA: "FDR",
@@ -83,18 +108,12 @@ var seinfeld = {
 			answerC: "Absolutely"
 		},
 
-	],
-	succesfulAnswer: function(e){
-		if(userinput === this.correctAnswer){
-			console.log("You got it!");
-		}
-		else{
-			console.log("You suck!");
-		}
-	}
-};
+	]
+}
 
-$('#question').html(seinfeld.data[0].question);
+
+	
+
 
 
 
