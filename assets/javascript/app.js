@@ -28,18 +28,25 @@ function stop(){
 	intervalId = false;
 }
 
-run();
+// run();
+
+var images = ["../../seinfeld_Celebration.gif"]
+var totalWins = 0;
+var totalLosses = 0;
+
+
+
 
 var seinfeld = {
 
 	data:[
-		// {
-		// 	question: "What episode is played backwards, from end to beginning?",
-		// 	correctAnswer: "The Betrayal",
-		// 	answerA: "The Maid",
-		// 	answerB: "The Blood",
-		// 	answerC: "The Butter Shave"
-		// },
+		{
+			question: "What episode is played backwards, from end to beginning?",
+			correctAnswer: "The Betrayal",
+			answerA: "The Maid",
+			answerB: "The Blood",
+			answerC: "The Butter Shave"
+		},
 		{
 			question: "In the episode 'The Betrayal' who did elaine sleep with before the trip?",
 			answerA: "FDR",
@@ -107,13 +114,33 @@ var seinfeld = {
 			answerB: "What was the question?",
 			answerC: "Absolutely"
 		},
-
 	]
 }
 
+$('#question').append(seinfeld.data[0].question);
+$('#answerA').append(seinfeld.data[0].correctAnswer);
+$('#answerB').append(seinfeld.data[0].answerA);
+$('#answerC').append(seinfeld.data[0].answerB);	
+$('#answerD').append(seinfeld.data[0].answerC);		
 
+
+function correct(){
+	$('#answerA').on('click', function(){
+		console.log("That's right!")	
+		totalWins++
+		displayImage();
+	})
+}
+
+function incorrect(){
+
+}
+
+function displayImage(){
+	$('#imageHolder').html("<img src='../images/celebration.png' width='400px'>")
+}
 	
-
+correct();
 
 
 
