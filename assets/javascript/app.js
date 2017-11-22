@@ -117,11 +117,15 @@ var seinfeld = {
 	]
 }
 
-$('#question').append(seinfeld.data[0].question);
-$('#answerA').append(seinfeld.data[0].correctAnswer);
-$('#answerB').append(seinfeld.data[0].answerA);
-$('#answerC').append(seinfeld.data[0].answerB);	
-$('#answerD').append(seinfeld.data[0].answerC);		
+function question(i){
+		$('#question').append(seinfeld.data[i].question);
+		$('#answerA').append(seinfeld.data[i].correctAnswer);
+		$('#answerB').append(seinfeld.data[i].answerA);
+		$('#answerC').append(seinfeld.data[i].answerB);	
+		$('#answerD').append(seinfeld.data[i].answerC)
+}
+question(5);
+question(2);
 
 
 function correct(){
@@ -137,9 +141,11 @@ function incorrect(){
 }
 
 function displayImage(){
-	$('#imageHolder').html("<img src='../images/celebration.png' width='400px'>")
+	$('#question1').html("<img id='celebrate1' src='http://cdn1.theodysseyonline.com/files/2016/01/10/635880618762451515-697028522_Seinfeld.png'>")
 }
 	
+
+question1();
 correct();
 
 

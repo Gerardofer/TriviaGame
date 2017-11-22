@@ -1,4 +1,8 @@
-
+body {
+	background-image: url("../images/Kramer_wallpapers.jpg");
+	background-size: cover;
+	background-position: center;
+}
 
 h3 {
 	color: black;
@@ -16,5 +20,10 @@ h3 {
 
 #clock {
 	font-size: 45px;
+}
+
+#celebrate1 {
+	margin-left: 350px;
+	width: 600px;
 }
 
