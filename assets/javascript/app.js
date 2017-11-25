@@ -42,20 +42,20 @@ var seinfeld = {
 	data:[
 		{
 			question: "What episode is played backwards, from end to beginning?",
-			correctAnswer: "The Betrayal",
-			answerA: "The Maid",
-			answerB: "The Blood",
-			answerC: "The Butter Shave"
+			answerA: "The Betrayal",
+			answerB: "The Maid",
+			answerC: "The Blood",
+			answerD: "The Butter Shave"
 		},
 		{
-			question: "In the episode 'The Betrayal' who did elaine sleep with before the trip?",
+			question: "In the episode 'The Betrayal' who did Elaine sleep with before the trip?",
 			answerA: "FDR",
 			correctAnswer: "Peter",
 			answerB: "George",
 			answerC: "Jerry"
 		},
 		{
-			question: "Who was with kramer when he found the set to the 'Merv Griffin Show'?",
+			question: "Who was with Kramer when he found the set to the 'Merv Griffin Show'?",
 			answerA: "Elaine",
 			answerB: "Jerry",
 			correctAnswer: "Newman",
@@ -63,7 +63,7 @@ var seinfeld = {
 
 		},
 		{
-			question: "The Wizard Planner that Jerry bought his father was it stolen?",
+			question: "The Wizard Planner that Jerry bought his father, was it stolen?",
 			answerA: "No",
 			answerB: "Perhaps",
 			answerC: "What was the question?",
@@ -71,17 +71,17 @@ var seinfeld = {
 
 		},
 		{
-			question: "In the episode 'The Dealership' what is it Putty does to annoy Jerry?",
+			question: "In the episode 'The Dealership', what is it Putty does to annoy Jerry?",
 			correctAnswer: "High Five",
 			answerA: "Hug",
 			answerB: "Kiss",
 			answerC: "Shake Hands"
 		},
 		{
-			question: "What are the words George's Father use when his blood pressure gets high?",
-			answerA: "Calm Down",
-			correctAnswer: "Serenity Now",
-			answerB: "1, 2, 3",
+			question: "What are the words George's Father uses when his blood pressure gets high?",
+			answerA: "Calm Down!",
+			correctAnswer: "Serenity Now!",
+			answerB: "1!, 2!!, 3!!!",
 			answerC: "Help me Now!"
 		},
 		{
@@ -93,7 +93,7 @@ var seinfeld = {
 
 		},
 		{
-			question: "Which episode does everybody make fun of Jerry's girlfriend belly button talking?",
+			question: "In which episode is Jerry's girlfriend's belly button made fun of by everyone?",
 			correctAnswer: "The Voice",
 			answerA: "The Cartoon",
 			answerB: "The Junkmail",
@@ -101,16 +101,15 @@ var seinfeld = {
 		},
 		{
 			question: "Did Kramer ever work at a bagel shop?",
-			question: "Does Jerry sleep with George's girlfriend?",
 			answerA: "No",
-			answerB: "Perhaps",
+			answerB: "Forget about it!",
 			answerC: "What was the question?",
 			correctAnswer: "Absolutely"
 		},
 		{
 			question: "Does George ever sleep with his cousin?",
 			correctAnswer: "No",
-			answerA: "Perhaps",
+			answerA: "Say what now?",
 			answerB: "What was the question?",
 			answerC: "Absolutely"
 		},
@@ -119,34 +118,40 @@ var seinfeld = {
 
 function question(i){
 		$('#question').append(seinfeld.data[i].question);
-		$('#answerA').append(seinfeld.data[i].correctAnswer);
-		$('#answerB').append(seinfeld.data[i].answerA);
-		$('#answerC').append(seinfeld.data[i].answerB);	
-		$('#answerD').append(seinfeld.data[i].answerC)
+		$('#answerA').append(seinfeld.data[i].answerA);
+		$('#answerB').append(seinfeld.data[i].answerB);
+		$('#answerC').append(seinfeld.data[i].answerC);	
+		$('#answerD').append(seinfeld.data[i].answerD);
+
+		answerCheck();
 }
-question(5);
-question(2);
 
-
-function correct(){
-	$('#answerA').on('click', function(){
-		console.log("That's right!")	
-		totalWins++
-		displayImage();
+function answerCheck(){
+	$('button').on('click', function(){
+		if (seinfeld.data.answerA === "The Betrayal"){
+			console.log("That's right!")	
+			totalWins++;
+			displayImageCorrect();
+		}
+		else {
+			totalLosses++;
+			displayImageIncorrect();
+		}
 	})
 }
 
-function incorrect(){
-
+function displayImageIncorrect(){
+	$('#question1').html("<img id='celebrate1' src='https://i1.wp.com/jacksonupperco.com/wp-content/uploads/2017/06/screen-shot-2016-12-13-at-1-41-09-pm.png?ssl=1'>")
 }
 
-function displayImage(){
-	$('#question1').html("<img id='celebrate1' src='http://cdn1.theodysseyonline.com/files/2016/01/10/635880618762451515-697028522_Seinfeld.png'>")
+function displayImageCorrect(){
+	$('#question1').html("<img id='incorrect' src='http://cdn1.theodysseyonline.com/files/2016/01/10/635880618762451515-697028522_Seinfeld.png'>")
 }
 	
+question(0);
+answerCheck();
 
-question1();
-correct();
+
 
 
 

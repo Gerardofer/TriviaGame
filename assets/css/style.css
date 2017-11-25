@@ -2,12 +2,15 @@ body {
 	background-image: url("../images/Kramer_wallpapers.jpg");
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 
 h3 {
-	color: black;
+	color: white;
 	font-size: 40px;
-
+	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
+				 2px 10px 20px rgba(33,156,160,0.1),
+				 2px 20px 30px rgba(33,156,160,0.1);
 }
 
 .btn{
@@ -23,6 +26,52 @@ h3 {
 }
 
 #celebrate1 {
+	margin-left: 350px;
+	width: 600px;
+}
+
+#clock {
+	color: white;
+	font-size: 40px;
+	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
+				 2px 10px 20px rgba(33,156,160,0.1),
+				 2px 20px 30px rgba(33,156,160,0.1);
+}
+
+#answerA{
+	color: white;
+	font-size: 30px;
+	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
+				 2px 10px 20px rgba(33,156,160,0.1),
+				 2px 20px 30px rgba(33,156,160,0.1);
+
+}
+#answerB{
+	color: white;
+	font-size: 30px;
+	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
+				 2px 10px 20px rgba(33,156,160,0.1),
+				 2px 20px 30px rgba(33,156,160,0.1);
+
+}
+#answerC{
+	color: white;
+	font-size: 30px;
+	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
+				 2px 10px 20px rgba(33,156,160,0.1),
+				 2px 20px 30px rgba(33,156,160,0.1);
+
+}
+#answerD{
+	color: white;
+	font-size: 30px;
+	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
+				 2px 10px 20px rgba(33,156,160,0.1),
+				 2px 20px 30px rgba(33,156,160,0.1);
+
+}
+
+#incorrect {
 	margin-left: 350px;
 	width: 600px;
 }
