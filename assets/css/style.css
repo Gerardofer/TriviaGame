@@ -44,31 +44,89 @@ h3 {
 	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
 				 2px 10px 20px rgba(33,156,160,0.1),
 				 2px 20px 30px rgba(33,156,160,0.1);
+	transition: 0.48s;
 
 }
+
+#answerA:hover {
+	background: #fcd820;
+	color: #e30923;
+	font-weight: bold;
+	font-size: 36px;
+	border: 2px solid #e30923;
+	padding-left: 15px; 
+	transition: 0.48s;
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
+}
+
 #answerB{
 	color: white;
 	font-size: 30px;
 	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
 				 2px 10px 20px rgba(33,156,160,0.1),
 				 2px 20px 30px rgba(33,156,160,0.1);
-
+	transition: 0.48s;
 }
+
+#answerB:hover{
+	background: #fcd820;
+	color: #e30923;
+	font-weight: bold;
+	font-size: 36px;
+	border: 2px solid #e30923;
+	padding-left: 15px; 
+	transition: 0.48s;
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
+}
+
 #answerC{
 	color: white;
 	font-size: 30px;
 	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
 				 2px 10px 20px rgba(33,156,160,0.1),
 				 2px 20px 30px rgba(33,156,160,0.1);
+	transition: 0.48s;
 
 }
+
+#answerC:hover{
+	background: #fcd820;
+	color: #e30923;
+	font-weight: bold;
+	font-size: 36px;
+	border: 2px solid #e30923;
+	padding-left: 15px; 
+	transition: 0.48s;
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
+}
+
 #answerD{
 	color: white;
 	font-size: 30px;
 	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
 				 2px 10px 20px rgba(33,156,160,0.1),
 				 2px 20px 30px rgba(33,156,160,0.1);
+	transition: 0.48s;
 
+}
+
+#answerD:hover{
+	background: #fcd820;
+	color: #e30923;
+	font-weight: bold;
+	font-size: 33px;
+	border: 2px solid #e30923;
+	padding-left: 15px; 
+	transition: 0.48s;
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
 }
 
 #incorrect {

@@ -45,21 +45,102 @@ var seinfeld = {
 			answerA: "The Betrayal",
 			answerB: "The Maid",
 			answerC: "The Blood",
-			answerD: "The Butter Shave"
+			answerD: "The Butter Shave",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerA').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerB').append(this.answerB);
+				$('#answerC').append(this.answerC);
+				$('#answerD').append(this.answerD);
+				$('#answerB').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerC').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerD').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 		},
 		{
 			question: "In the episode 'The Betrayal' who did Elaine sleep with before the trip?",
 			answerA: "FDR",
-			correctAnswer: "Peter",
-			answerB: "George",
-			answerC: "Jerry"
+			answerB: "Peter",
+			answerC: "George",
+			answerD: "Jerry",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerB').append(this.answerB);
+				$('#answerB').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerC').append(this.answerC);
+				$('#answerD').append(this.answerD);
+				$('#answerA').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerC').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerD').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 		},
 		{
 			question: "Who was with Kramer when he found the set to the 'Merv Griffin Show'?",
 			answerA: "Elaine",
 			answerB: "Jerry",
-			correctAnswer: "Newman",
-			answerC: "Putty"
+			answerC: "Newman",
+			answerD: "Putty",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerC').append(this.answerB);
+				$('#answerC').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerB').append(this.answerB);
+				$('#answerD').append(this.answerD);
+				$('#answerA').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerB').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerD').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 
 		},
 		{
@@ -67,89 +148,248 @@ var seinfeld = {
 			answerA: "No",
 			answerB: "Perhaps",
 			answerC: "What was the question?",
-			correctAnswer: "Absolutely"
+			answerD: "Absolutely",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerA').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerB').append(this.answerB);
+				$('#answerC').append(this.answerC);
+				$('#answerD').append(this.answerD);
+				$('#answerB').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerC').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerD').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 
 		},
 		{
 			question: "In the episode 'The Dealership', what is it Putty does to annoy Jerry?",
-			correctAnswer: "High Five",
-			answerA: "Hug",
-			answerB: "Kiss",
-			answerC: "Shake Hands"
+			answerA: "Shake Hands",
+			answerB: "Hug",
+			answerC: "Kiss",
+			answerD: "High Five!",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerD').append(this.answerD);
+				$('#answerD').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerB').append(this.answerB);
+				$('#answerC').append(this.answerC);
+				$('#answerA').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerB').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerC').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 		},
 		{
 			question: "What are the words George's Father uses when his blood pressure gets high?",
 			answerA: "Calm Down!",
-			correctAnswer: "Serenity Now!",
-			answerB: "1!, 2!!, 3!!!",
-			answerC: "Help me Now!"
+			answerB: "Serenity Now!",
+			answerC: "1!, 2!!, 3!!!",
+			answerD: "Help me Now!",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerB').append(this.answerB);
+				$('#answerB').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerC').append(this.answerC);
+				$('#answerD').append(this.answerD);
+				$('#answerA').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerC').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerD').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 		},
 		{
 			question: "Does Jerry sleep with George's girlfriend?",
 			answerA: "No",
 			answerB: "Perhaps",
 			answerC: "What was the question?",
-			correctAnswer: "Absolutely"
+			answerD: "Absolutely",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerD').append(this.answerD);
+				$('#answerD').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerB').append(this.answerB);
+				$('#answerC').append(this.answerC);
+				$('#answerA').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerB').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerC').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 
 		},
 		{
 			question: "In which episode is Jerry's girlfriend's belly button made fun of by everyone?",
-			correctAnswer: "The Voice",
-			answerA: "The Cartoon",
-			answerB: "The Junkmail",
-			answerC: "The Strongbox"
+			answerA: "The Strongbox",
+			answerB: "The Cartoon",
+			answerC: "The Voice",
+			answerD: "The Junkmail",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerC').append(this.answerC);
+				$('#answerC').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerB').append(this.answerB);
+				$('#answerD').append(this.answerD);
+				$('#answerA').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerB').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerD').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 		},
 		{
 			question: "Did Kramer ever work at a bagel shop?",
 			answerA: "No",
 			answerB: "Forget about it!",
 			answerC: "What was the question?",
-			correctAnswer: "Absolutely"
+			answerD: "Absolutely",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerD').append(this.answerD);
+				$('#answerD').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerB').append(this.answerB);
+				$('#answerC').append(this.answerC);
+				$('#answerA').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerB').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerC').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
+
 		},
 		{
 			question: "Does George ever sleep with his cousin?",
-			correctAnswer: "No",
-			answerA: "Say what now?",
-			answerB: "What was the question?",
-			answerC: "Absolutely"
+			answerA: "No",
+			answerB: "Say what now?",
+			answerC: "What was the question?",
+			answerD: "Absolutely",
+			postQuestion: function(){
+				$('#question').append(this.question);
+			},
+			correctAnswer: function(){
+				$('#answerA').append(this.answerA);
+				$('#answerA').on('click', function(){
+					console.log("Got it!!!");
+					totalWins++;
+				});
+			},
+			incorrectAnswers: function(){
+				$('#answerB').append(this.answerB);
+				$('#answerC').append(this.answerC);
+				$('#answerD').append(this.answerD);
+				$('#answerB').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerC').on('click', function(){
+					console.log("no way!");
+					totalLosses++;
+				});
+				$('#answerD').on('click', function(){
+					console.log("no way!");
+					totalLosses++;	
+				});
+			}
 		},
 	]
 }
+seinfeld.data[9].postQuestion();
+seinfeld.data[9].correctAnswer();
+seinfeld.data[9].incorrectAnswers();
 
-function question(i){
-		$('#question').append(seinfeld.data[i].question);
-		$('#answerA').append(seinfeld.data[i].answerA);
-		$('#answerB').append(seinfeld.data[i].answerB);
-		$('#answerC').append(seinfeld.data[i].answerC);	
-		$('#answerD').append(seinfeld.data[i].answerD);
-
-		answerCheck();
-}
-
-function answerCheck(){
-	$('button').on('click', function(){
-		if (seinfeld.data.answerA === "The Betrayal"){
-			console.log("That's right!")	
-			totalWins++;
-			displayImageCorrect();
-		}
-		else {
-			totalLosses++;
-			displayImageIncorrect();
-		}
-	})
-}
-
-function displayImageIncorrect(){
-	$('#question1').html("<img id='celebrate1' src='https://i1.wp.com/jacksonupperco.com/wp-content/uploads/2017/06/screen-shot-2016-12-13-at-1-41-09-pm.png?ssl=1'>")
-}
-
-function displayImageCorrect(){
-	$('#question1').html("<img id='incorrect' src='http://cdn1.theodysseyonline.com/files/2016/01/10/635880618762451515-697028522_Seinfeld.png'>")
-}
-	
-question(0);
-answerCheck();
 
 
 
