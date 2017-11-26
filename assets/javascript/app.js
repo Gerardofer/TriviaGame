@@ -8,34 +8,9 @@
 
 var number = 30;
 var intervalId = false;
-
-function run(){
-	if(!intervalId){
-		intervalId = setInterval(decrement, 1000)
-	}return;
-}
-
-function decrement(){
-	number--;
-	$('#seconds').html(number);
-	if (number <= 0){
-		stop();
-	}
-}
-
-function stop(){
-	clearInterval(intervalId);
-	intervalId = false;
-}
-
-// run();
-
 var images = ["../../seinfeld_Celebration.gif"]
 var totalWins = 0;
 var totalLosses = 0;
-
-
-
 
 var seinfeld = {
 
@@ -54,6 +29,10 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					$('.content').remove();
+					celebration1();
+					stop();
+
 				});
 			},
 			incorrectAnswers: function(){
@@ -63,14 +42,17 @@ var seinfeld = {
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
 					totalLosses++;	
+					stop();
 				});
 			}
 		},
@@ -88,6 +70,9 @@ var seinfeld = {
 				$('#answerB').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					$('.content').remove();
+					celebration2();
+					stop();
 				});
 			},
 			incorrectAnswers: function(){
@@ -97,14 +82,17 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;
+					stop();	
 				});
 			}
 		},
@@ -118,10 +106,13 @@ var seinfeld = {
 				$('#question').append(this.question);
 			},
 			correctAnswer: function(){
-				$('#answerC').append(this.answerB);
+				$('#answerC').append(this.answerC);
 				$('#answerC').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					$('.content').remove();
+					celebration3();
+					stop();
 				});
 			},
 			incorrectAnswers: function(){
@@ -131,14 +122,17 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;
+					stop();	
 				});
 			}
 
@@ -157,6 +151,9 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					$('.content').remove();
+					celebration4();
+					stop();
 				});
 			},
 			incorrectAnswers: function(){
@@ -166,14 +163,17 @@ var seinfeld = {
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;
+					stop();	
 				});
 			}
 
@@ -192,6 +192,7 @@ var seinfeld = {
 				$('#answerD').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					celebration();
 				});
 			},
 			incorrectAnswers: function(){
@@ -201,14 +202,17 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;
+					stop();	
 				});
 			}
 		},
@@ -226,6 +230,7 @@ var seinfeld = {
 				$('#answerB').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					celebration();
 				});
 			},
 			incorrectAnswers: function(){
@@ -235,14 +240,17 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;
+					stop();	
 				});
 			}
 		},
@@ -260,6 +268,7 @@ var seinfeld = {
 				$('#answerD').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					celebration();
 				});
 			},
 			incorrectAnswers: function(){
@@ -268,15 +277,15 @@ var seinfeld = {
 				$('#answerC').append(this.answerC);
 				$('#answerA').on('click', function(){
 					console.log("no way!");
-					totalLosses++;
+					totalLosses++;stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
-					totalLosses++;
+					totalLosses++;stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;stop();	
 				});
 			}
 
@@ -295,6 +304,7 @@ var seinfeld = {
 				$('#answerC').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					celebration();
 				});
 			},
 			incorrectAnswers: function(){
@@ -303,15 +313,15 @@ var seinfeld = {
 				$('#answerD').append(this.answerD);
 				$('#answerA').on('click', function(){
 					console.log("no way!");
-					totalLosses++;
+					totalLosses++;stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
-					totalLosses++;
+					totalLosses++;stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;stop();	
 				});
 			}
 		},
@@ -329,6 +339,7 @@ var seinfeld = {
 				$('#answerD').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					celebration();
 				});
 			},
 			incorrectAnswers: function(){
@@ -337,15 +348,15 @@ var seinfeld = {
 				$('#answerC').append(this.answerC);
 				$('#answerA').on('click', function(){
 					console.log("no way!");
-					totalLosses++;
+					totalLosses++;stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
-					totalLosses++;
+					totalLosses++;stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;stop();	
 				});
 			}
 
@@ -364,6 +375,7 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("Got it!!!");
 					totalWins++;
+					celebration();
 				});
 			},
 			incorrectAnswers: function(){
@@ -372,23 +384,73 @@ var seinfeld = {
 				$('#answerD').append(this.answerD);
 				$('#answerB').on('click', function(){
 					console.log("no way!");
-					totalLosses++;
+					totalLosses++;stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
-					totalLosses++;
+					totalLosses++;stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
-					totalLosses++;	
+					totalLosses++;
+					stop();	
 				});
 			}
 		},
 	]
 }
-seinfeld.data[9].postQuestion();
-seinfeld.data[9].correctAnswer();
-seinfeld.data[9].incorrectAnswers();
+
+
+function run(){
+	if(!intervalId){
+		intervalId = setInterval(decrement, 1000)
+	}return;
+};
+
+function decrement(){
+	number--;
+	$('#seconds').html(number);
+	if (number <= 0){
+		stop();
+	}
+};
+
+function stop(){
+	clearInterval(intervalId);
+	intervalId = false;
+};
+
+function celebration1(){
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:58%;position:relative; padding-left: 11%;"><iframe src="https://giphy.com/embed/l2JJO2teeAvDMZvva" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+};
+
+function celebration2(){
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:58%;position:relative; padding-left: 11%;"><iframe src="https://giphy.com/embed/l2JJyDYEX1tXFmCd2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+};
+
+function celebration3(){
+	$('#imageHolder').append('<div style="width:80%;height:0; padding-bottom:75%;position:relative; padding-left: 11%;"><iframe src="https://giphy.com/embed/aMh59aKR8vjdC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+}
+
+function celebration4(){
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:72%;position:relative; padding-left: 11%;"><iframe src="https://giphy.com/embed/QWrClN3mlYtHO" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+};
+
+
+run();
+seinfeld.data[3].postQuestion();
+seinfeld.data[3].correctAnswer();
+seinfeld.data[3].incorrectAnswers();
+
+
+// function celebration(){
+// 	var celebration = $.get("http://api.giphy.com/v1/gifs/search?q=seinfeld&api_key=dc6zaTOxFJmzC&limit=5");
+// 		celebration.done(function(element) { 
+// 		// $('#imageHolder').html(element.data[2].images.looping.mp4);
+// 		console.log(element.data);
+// 		// console.log(element.data[2].images.looping) 
+// 		});
+	// };
 
 
 
