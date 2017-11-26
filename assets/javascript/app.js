@@ -42,16 +42,22 @@ var seinfeld = {
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed1();
 					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed1();
 					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
 					totalLosses++;	
+					$('.content').remove();
+					failed1();
 					stop();
 				});
 			}
@@ -82,16 +88,22 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();	
 				});
 			}
@@ -122,16 +134,22 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed3();
 					stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed3();
 					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed3();
 					stop();	
 				});
 			}
@@ -163,16 +181,22 @@ var seinfeld = {
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed4();
 					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed4();
 					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed4();
 					stop();	
 				});
 			}
@@ -204,16 +228,22 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed5();
 					stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed5();
 					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed5();
 					stop();	
 				});
 			}
@@ -244,16 +274,22 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();	
 				});
 			}
@@ -284,16 +320,22 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed1();
 					stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed1();
 					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed1();
 					stop();	
 				});
 			}
@@ -325,17 +367,23 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed5();
 					stop();
 
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed5();
 					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed5();
 					stop();	
 				});
 			}
@@ -366,16 +414,22 @@ var seinfeld = {
 				$('#answerA').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed4();
 					stop();
 				});
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed4();
 					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed4();
 					stop();	
 				});
 			}
@@ -407,16 +461,22 @@ var seinfeld = {
 				$('#answerB').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();
 				});
 				$('#answerC').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();
 				});
 				$('#answerD').on('click', function(){
 					console.log("no way!");
 					totalLosses++;
+					$('.content').remove();
+					failed2();
 					stop();	
 				});
 			}
@@ -445,7 +505,7 @@ function stop(){
 };
 
 function celebration1(){
-	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:58%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJO2teeAvDMZvva" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:58%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJO2teeAvDMZvva" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 };
 
 function celebration2(){
@@ -453,11 +513,11 @@ function celebration2(){
 };
 
 function celebration3(){
-	$('#imageHolder').append('<div style="width:80%;height:0; padding-bottom:75%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/aMh59aKR8vjdC" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+	$('#imageHolder').append('<div style="width:80%;height:0; padding-bottom:75%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/aMh59aKR8vjdC" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 }
 
 function celebration4(){
-	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:72%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/QWrClN3mlYtHO" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:72%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/QWrClN3mlYtHO" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 };
 
 function celebration5(){
@@ -465,23 +525,44 @@ function celebration5(){
 }
 
 function celebration6(){
-	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:57%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/12UlfHpF05ielO" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:57%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/12UlfHpF05ielO" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 }
 
 function celebration7(){
-	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:60%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/pT66TpcUQPEGc" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:60%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/pT66TpcUQPEGc" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 }
 
 function celebration8(){
-	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:66%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/G9yZMzJe6pMYw" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/happy-excited-seinfeld-G9yZMzJe6pMYw">via GIPHY</a></p>')
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:66%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/G9yZMzJe6pMYw" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/happy-excited-seinfeld-G9yZMzJe6pMYw">via GIPHY</a></p>');
 };
 
 function celebration9(){
-	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:83%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/PuZ17QhVIoNFK" width="80%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/excited-seinfeld-PuZ17QhVIoNFK">via GIPHY</a></p>')
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:83%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/PuZ17QhVIoNFK" width="80%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/excited-seinfeld-PuZ17QhVIoNFK">via GIPHY</a></p>');
 };
 
 function celebration10(){
-	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:60%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/qGFKMntShELTy" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>')
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:60%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/qGFKMntShELTy" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+};
+
+function failed1(){
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:71%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/6Q2KA5ly49368" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+};
+
+function failed2(){
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:75%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/PEtL0mS2JXMBi" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+};
+
+function failed3(){
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:75%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/10o3Um2U3wa4DK" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+};
+
+function failed4(){
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:74%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/QMcamps7Gzj2g" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+};
+
+function failed5(){
+	$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:75%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/1UBEgUWneaVVu" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+
 };
 
 run();
