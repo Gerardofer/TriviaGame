@@ -8,9 +8,9 @@ body {
 h3 {
 	color: white;
 	font-size: 40px;
-	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
-				 2px 10px 20px rgba(33,156,160,0.1),
-				 2px 20px 30px rgba(33,156,160,0.1);
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
 }
 
 .btn{
@@ -34,17 +34,17 @@ h3 {
 #clock {
 	color: white;
 	font-size: 40px;
-	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
-				 2px 10px 20px rgba(33,156,160,0.1),
-				 2px 20px 30px rgba(33,156,160,0.1);
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
 }
 
 #answerA{
 	color: white;
 	font-size: 30px;
-	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
-				 2px 10px 20px rgba(33,156,160,0.1),
-				 2px 20px 30px rgba(33,156,160,0.1);
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
 	transition: 0.48s;
 
 }
@@ -55,6 +55,7 @@ h3 {
 	font-weight: bold;
 	font-size: 36px;
 	border: 2px solid #e30923;
+	border-radius: 30px;
 	padding-left: 15px; 
 	transition: 0.48s;
 	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
@@ -65,9 +66,9 @@ h3 {
 #answerB{
 	color: white;
 	font-size: 30px;
-	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
-				 2px 10px 20px rgba(33,156,160,0.1),
-				 2px 20px 30px rgba(33,156,160,0.1);
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
 	transition: 0.48s;
 }
 
@@ -77,6 +78,7 @@ h3 {
 	font-weight: bold;
 	font-size: 36px;
 	border: 2px solid #e30923;
+	border-radius: 30px;
 	padding-left: 15px; 
 	transition: 0.48s;
 	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
@@ -87,9 +89,9 @@ h3 {
 #answerC{
 	color: white;
 	font-size: 30px;
-	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
-				 2px 10px 20px rgba(33,156,160,0.1),
-				 2px 20px 30px rgba(33,156,160,0.1);
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
 	transition: 0.48s;
 
 }
@@ -100,6 +102,7 @@ h3 {
 	font-weight: bold;
 	font-size: 36px;
 	border: 2px solid #e30923;
+	border-radius: 30px;
 	padding-left: 15px; 
 	transition: 0.48s;
 	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
@@ -110,9 +113,9 @@ h3 {
 #answerD{
 	color: white;
 	font-size: 30px;
-	text-shadow: 1px 5px 10px rgba(33,156,160,0.4),
-				 2px 10px 20px rgba(33,156,160,0.1),
-				 2px 20px 30px rgba(33,156,160,0.1);
+	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
+				 2px 10px 20px rgba(0,0,0,0.1),
+				 2px 20px 30px rgba(0,0,0,0.1);
 	transition: 0.48s;
 
 }
@@ -123,6 +126,7 @@ h3 {
 	font-weight: bold;
 	font-size: 33px;
 	border: 2px solid #e30923;
+	border-radius: 30px;
 	padding-left: 15px; 
 	transition: 0.48s;
 	text-shadow: 1px 5px 10px rgba(0,0,0,0.4),
@@ -133,5 +137,13 @@ h3 {
 #incorrect {
 	margin-left: 350px;
 	width: 600px;
+}
+
+#correct-answer {
+	font-size: 18px;
+	color: white;
+	text-shadow: 1px 3px 4px rgba(0,0,0,0.4),
+				 2px 6px 14px rgba(0,0,0,0.1),
+				 2px 12px 24px rgba(0,0,0,0.1);
 }
 
