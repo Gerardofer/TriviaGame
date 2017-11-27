@@ -23,11 +23,14 @@
 				answerB: "The Maid",
 				answerC: "The Blood",
 				answerD: "The Butter Shave",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerA').append(this.answerA);
 					$('#answerA').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -38,9 +41,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerB').append(this.answerB);
-					$('#answerC').append(this.answerC);
-					$('#answerD').append(this.answerD);
 					$('#answerB').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -73,11 +73,14 @@
 				answerB: "Peter",
 				answerC: "George",
 				answerD: "Jerry",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerB').append(this.answerB);
 					$('#answerB').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -87,9 +90,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerA').append(this.answerA);
-					$('#answerC').append(this.answerC);
-					$('#answerD').append(this.answerD);
 					$('#answerA').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -122,11 +122,14 @@
 				answerB: "Jerry",
 				answerC: "Newman",
 				answerD: "Putty",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerC').append(this.answerC);
 					$('#answerC').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -136,9 +139,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerA').append(this.answerA);
-					$('#answerB').append(this.answerB);
-					$('#answerD').append(this.answerD);
 					$('#answerA').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -172,11 +172,14 @@
 				answerB: "Perhaps",
 				answerC: "What was the question?",
 				answerD: "Absolutely",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerA').append(this.answerA);
 					$('#answerA').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -186,9 +189,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerB').append(this.answerB);
-					$('#answerC').append(this.answerC);
-					$('#answerD').append(this.answerD);
 					$('#answerB').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -222,11 +222,14 @@
 				answerB: "Hug",
 				answerC: "Kiss",
 				answerD: "High Five!",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerD').append(this.answerD);
 					$('#answerD').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -236,9 +239,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerA').append(this.answerA);
-					$('#answerB').append(this.answerB);
-					$('#answerC').append(this.answerC);
 					$('#answerA').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -271,11 +271,14 @@
 				answerB: "Serenity Now!",
 				answerC: "1!, 2!!, 3!!!",
 				answerD: "Help me Now!",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerB').append(this.answerB);
 					$('#answerB').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -285,9 +288,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerA').append(this.answerA);
-					$('#answerC').append(this.answerC);
-					$('#answerD').append(this.answerD);
 					$('#answerA').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -320,11 +320,14 @@
 				answerB: "Perhaps",
 				answerC: "What was the question?",
 				answerD: "Absolutely",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerD').append(this.answerD);
 					$('#answerD').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -334,9 +337,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerA').append(this.answerA);
-					$('#answerB').append(this.answerB);
-					$('#answerC').append(this.answerC);
 					$('#answerA').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -370,11 +370,14 @@
 				answerB: "The Cartoon",
 				answerC: "The Voice",
 				answerD: "The Junkmail",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerC').append(this.answerC);
 					$('#answerC').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -384,9 +387,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerA').append(this.answerA);
-					$('#answerB').append(this.answerB);
-					$('#answerD').append(this.answerD);
 					$('#answerA').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -419,11 +419,14 @@
 				answerB: "Forget about it!",
 				answerC: "What was the question?",
 				answerD: "Absolutely",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerD').append(this.answerD);
 					$('#answerD').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -433,9 +436,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerA').append(this.answerA);
-					$('#answerB').append(this.answerB);
-					$('#answerC').append(this.answerC);
 					$('#answerA').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -469,11 +469,14 @@
 				answerB: "Say what now?",
 				answerC: "What was the question?",
 				answerD: "Absolutely",
-				postQuestion: function(){
+				postQuestAns: function(){
 					$('#question').append(this.question);
+					$('#answerA').append(this.answerA);
+					$('#answerB').append(this.answerB);
+					$('#answerC').append(this.answerC);
+					$('#answerD').append(this.answerD);
 				},
 				correctAnswer: function(){
-					$('#answerA').append(this.answerA);
 					$('#answerA').on('click', function(){
 						console.log("Got it!!!");
 						totalWins++;
@@ -483,9 +486,6 @@
 					});
 				},
 				incorrectAnswers: function(){
-					$('#answerB').append(this.answerB);
-					$('#answerC').append(this.answerC);
-					$('#answerD').append(this.answerD);
 					$('#answerB').on('click', function(){
 						console.log("no way!");
 						totalLosses++;
@@ -544,7 +544,7 @@
 	};
 //===================== Question display function ====================
 	function questionDisplay (){
-		seinfeld.data[count].postQuestion();
+		seinfeld.data[count].postQuestAns();
 		seinfeld.data[count].correctAnswer();
 		seinfeld.data[count].incorrectAnswers();
 	};
@@ -623,7 +623,7 @@
 	};
 
 	startTrivia();
-	// questionDisplay();
+	questionDisplay();
 	
 
 
