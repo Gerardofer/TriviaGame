@@ -11,7 +11,7 @@
 	var images = ["../../seinfeld_Celebration.gif"]
 	var totalWins = 0;
 	var totalLosses = 0;
-	var count = 0;
+	var count = 2;
 	var showQuestion;
 
 	var seinfeld = {
@@ -562,68 +562,68 @@
 //===================== Celebrations GIF ============================= 	
 
 	function celebration1(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:58%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJO2teeAvDMZvva" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJO2teeAvDMZvva" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function celebration2(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:58%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJyDYEX1tXFmCd2" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJyDYEX1tXFmCd2" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function celebration3(){
-		$('#imageHolder').append('<div style="width:80%;height:0; padding-bottom:75%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/aMh59aKR8vjdC" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:35%;height:0; padding-bottom:75%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/aMh59aKR8vjdC" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	}
 
 	function celebration4(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:72%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/QWrClN3mlYtHO" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/QWrClN3mlYtHO" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function celebration5(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:65%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/xT1XGXgtj8PWdvCLFS" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/xT1XGXgtj8PWdvCLFS" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	}
 
 	function celebration6(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:57%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/12UlfHpF05ielO" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/12UlfHpF05ielO" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	}
 
 	function celebration7(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:60%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/pT66TpcUQPEGc" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/pT66TpcUQPEGc" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	}
 
 	function celebration8(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:66%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/G9yZMzJe6pMYw" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/happy-excited-seinfeld-G9yZMzJe6pMYw">via GIPHY</a></p>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/G9yZMzJe6pMYw" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/happy-excited-seinfeld-G9yZMzJe6pMYw">via GIPHY</a></p>');
 	};
 
 	function celebration9(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:83%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/PuZ17QhVIoNFK" width="80%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/excited-seinfeld-PuZ17QhVIoNFK">via GIPHY</a></p>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/PuZ17QhVIoNFK" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/excited-seinfeld-PuZ17QhVIoNFK">via GIPHY</a></p>');
 	};
 
 	function celebration10(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:60%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/qGFKMntShELTy" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/qGFKMntShELTy" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function failed1(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:71%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/6Q2KA5ly49368" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/6Q2KA5ly49368" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function failed2(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:75%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/PEtL0mS2JXMBi" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/PEtL0mS2JXMBi" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function failed3(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:75%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/10o3Um2U3wa4DK" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/10o3Um2U3wa4DK" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function failed4(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:74%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/QMcamps7Gzj2g" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/QMcamps7Gzj2g" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function failed5(){
-		$('#imageHolder').append('<div style="width:80%;height:0;padding-bottom:75%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/1UBEgUWneaVVu" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').append('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/1UBEgUWneaVVu" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 
 	};
 
 	startTrivia();
-	questionDisplay();
+	// questionDisplay();
 	
 
 
