@@ -46,7 +46,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerA').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration1();
@@ -57,29 +56,26 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerB').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						setTimeout(failed1, 3000);
+						setTimeout(failed1, 1000);
 						nextQuestion();
 						stop();
 					});
 					$('#answerC').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						setTimeout(failed1, 3000);
+						setTimeout(failed1, 1000);
 						nextQuestion();
 						stop();
 					});
 					$('#answerD').on('click', function(){
-						console.log("no way!");
 						totalLosses++;	
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						setTimeout(failed1, 3000);
+						setTimeout(failed1, 1000);
 						nextQuestion();
 						stop();
 					});
@@ -100,7 +96,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerB').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration2();
@@ -109,7 +104,6 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerA').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Peter"');
@@ -117,7 +111,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerC').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Peter"');
@@ -125,7 +118,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerD').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Peter"');
@@ -149,7 +141,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerC').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration3();
@@ -158,7 +149,6 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerA').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Newman"');
@@ -166,7 +156,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerB').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Newman"');
@@ -174,7 +163,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerD').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Newman"');
@@ -199,7 +187,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerA').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration4();
@@ -208,7 +195,6 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerB').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "No"');
@@ -216,7 +202,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerC').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "No"');
@@ -224,7 +209,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerD').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "No"');
@@ -249,7 +233,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerD').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration5();
@@ -258,7 +241,6 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerA').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "High Five!"');
@@ -266,7 +248,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerB').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "High Five!"');
@@ -274,7 +255,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerC').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "High Five!"');
@@ -298,7 +278,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerB').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration6();
@@ -310,7 +289,6 @@ $(document).ready(function(){
 						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
-						$('#correct-answer').html('<p>The correct answer was: "Serenity Now!"');
 						failed2();
 						stop();
 					});
@@ -318,7 +296,6 @@ $(document).ready(function(){
 						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
-						$('#correct-answer').html('<p>The correct answer was: "Serenity Now!"');
 						failed2();
 						stop();
 					});
@@ -326,7 +303,6 @@ $(document).ready(function(){
 						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
-						$('#correct-answer').html('<p>The correct answer was: "Serenity Now!"');
 						failed2();
 						stop();	
 					});
@@ -347,7 +323,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerD').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration7();
@@ -356,7 +331,6 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerA').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Absolutely"');
@@ -364,7 +338,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerB').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Absolutely"');
@@ -372,7 +345,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerC').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Absolutely"');
@@ -397,7 +369,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerC').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration8();
@@ -406,7 +377,6 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerA').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "the Voice"');
@@ -414,7 +384,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerB').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "the Voice"');
@@ -422,7 +391,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerD').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "the Voice"');
@@ -446,7 +414,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerD').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration9();
@@ -455,7 +422,6 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerA').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Absolutely"');
@@ -463,7 +429,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerB').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Absolutely"');
@@ -471,7 +436,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerC').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "Absolutely"');
@@ -496,7 +460,6 @@ $(document).ready(function(){
 				},
 				correctAnswer: function(){
 					$('#answerA').on('click', function(){
-						console.log("Got it!!!");
 						totalWins++;
 						$('.content').remove();
 						celebration10();
@@ -505,7 +468,6 @@ $(document).ready(function(){
 				},
 				incorrectAnswers: function(){
 					$('#answerB').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "No"');
@@ -513,7 +475,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerC').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "No"');
@@ -521,7 +482,6 @@ $(document).ready(function(){
 						stop();
 					});
 					$('#answerD').on('click', function(){
-						console.log("no way!");
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "No"');
