@@ -11,60 +11,67 @@
 		<img id="logo" src="assets/images/seinfeld-logo.png" alt="Seinfeld Logo">
 	</div>
 
+	<div id="start-button" class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="btn btn-warning btn-lg btn-block btn-huge">Start!</div>
+			</div>
+		</div>
+	</div>
+	
 	<div class="container text-center">
-		<div id="start-button"></div>
 		<div id="clock">Time Remaining: <span id="seconds">30</span> seconds</div>
 	</div>
 	<div id="correct-answer" class="text-center"></div>
 	<div id="imageHolder"></div>
 
-<div class="container content">
-	<div class="row">
-		<div class="text-center">
-			<div class="col-md-12">
-				<h3 id="question"></h3>
+	<div class="container content">
+		<div class="row">
+			<div class="text-center">
+				<div class="col-md-12">
+					<h3 id="question"></h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-5">
+				<div id="answerA">A. </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-5">
+				<div id="answerB">B. </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-5">
+				<div id="answerC">C. </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-5">
+				<div id="answerD">D. </div>
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-5">
-			<div id="answerA">A. </div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-5">
-			<div id="answerB">B. </div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-5">
-			<div id="answerC">C. </div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-5">
-			<div id="answerD">D. </div>
-		</div>
-	</div>
-</div>
 
-<div class="container">
-	<div class="row">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div id="wins"></div>
+			</div>
+		</div>
+	</div>
 		<div class="col-md-4">
-			<div id="wins"></div>
+			<div id="losses"></div>
 		</div>
-	</div>
-</div>
-	<div class="col-md-4">
-		<div id="losses"></div>
-	</div>
-	
+		
 
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-<script src="assets/javascript/app.js"></script>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.js"
+	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	  crossorigin="anonymous"></script>
+	<script src="assets/javascript/app.js"></script>
 </body>
 </html>

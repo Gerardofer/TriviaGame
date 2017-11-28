@@ -6,12 +6,26 @@
 // -- create and array of objects for the questions.  Each object will have the question, the possible answers and a gif corresonding to the right or wrong answer
 // $(document).ready(function(){
 
+
+$(document).ready(function(){
+	var start = $('#start-button');
+	$('.content').hide();
+	$('#clock').hide();
+	start.show();
+	start.on('click', function(){
+		startTrivia();
+		$('#clock').show();
+		$('.content').show();
+		start.remove();
+	})
+
+
 	var number = 30;
 	var intervalId = false;
 	var images = ["../../seinfeld_Celebration.gif"]
 	var totalWins = 0;
 	var totalLosses = 0;
-	var count = 2;
+	var count = 0;
 	var showQuestion;
 
 	var seinfeld = {
@@ -36,6 +50,7 @@
 						totalWins++;
 						$('.content').remove();
 						celebration1();
+						setTimeout(nextQuestion, 1000);
 						stop();
 
 					});
@@ -46,7 +61,8 @@
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						failed1();
+						setTimeout(failed1, 3000);
+						nextQuestion();
 						stop();
 					});
 					$('#answerC').on('click', function(){
@@ -54,7 +70,8 @@
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						failed1();
+						setTimeout(failed1, 3000);
+						nextQuestion();
 						stop();
 					});
 					$('#answerD').on('click', function(){
@@ -62,7 +79,8 @@
 						totalLosses++;	
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						failed1();
+						setTimeout(failed1, 3000);
+						nextQuestion();
 						stop();
 					});
 				}
@@ -528,6 +546,7 @@
 		if (number <= 0){
 			totalLosses++;
 			failed1();
+			nextQuestion();
 			stop();
 		}
 	};
@@ -540,7 +559,7 @@
 
 // ==================== Start game ===================================
 	function startTrivia(){
-		showQuestion = setInterval(nextQuestion, 2000);
+		showQuestion = setInterval(nextQuestion, run());
 	};
 //===================== Question display function ====================
 	function questionDisplay (){
@@ -553,10 +572,7 @@
 
 	function nextQuestion (){
 		count++;
-		if (count === seinfeld.data.length){
-			$('#wins').html('<h2>WINS!!</h2><br>' + totalWins);
-			$('#losses').html('<h2>WINS!!</h2><br>' + totalLosses);
-		}
+		
 	};
 
 //===================== Celebrations GIF ============================= 	
@@ -622,12 +638,10 @@
 
 	};
 
-	startTrivia();
-	// questionDisplay();
 	
+	questionDisplay();
 
-
-// });
+});
 
 
 
