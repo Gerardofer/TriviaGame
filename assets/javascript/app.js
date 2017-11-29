@@ -20,7 +20,7 @@ $(document).ready(function(){
 	})
 
 
-	var number = 30;
+	var secondsRemaining = 30;
 	var intervalId = false;
 	var images = ["../../seinfeld_Celebration.gif"]
 	var totalWins = 0;
@@ -519,7 +519,7 @@ $(document).ready(function(){
 
 // ==================== Start game ===================================
 	function startTrivia(){
-		showQuestion = setInterval(nextQuestion, run());
+		showQuestion = setInterval(countDownTimer, 1000);
 	};
 //===================== Question display function ====================
 	function questionDisplay (){
@@ -530,9 +530,14 @@ $(document).ready(function(){
 
 //===================== Next question function =======================
 
-	function nextQuestion (){
-		count++;
-		
+	function countDownTimer (){
+		secondsRemaining--;
+		$("#seconds").html(secondsRemaining);
+		if (secondsRemaining === 0) {
+			count++;
+			questionDisplay();
+			secondsRemaining = 30;
+		}
 	};
 
 //===================== Celebrations GIF ============================= 	
