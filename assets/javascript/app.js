@@ -14,6 +14,7 @@ $(document).ready(function(){
 	start.show();
 	start.on('click', function(){
 		startTrivia();
+		questionDisplay();
 		$('#clock').show();
 		$('.content').show();
 		$('#start-button').remove();
@@ -27,7 +28,7 @@ $(document).ready(function(){
 	var totalLosses = 0;
 	var count = 0;
 	var showQuestion;
-	var timeInterval;
+	var prelude;
 
 	var seinfeld = {
 
@@ -50,9 +51,7 @@ $(document).ready(function(){
 						totalWins++;
 						$('.content').remove();
 						celebration1();
-						setTimeout(nextQuestion, 1000);
-						stop();
-
+						countDownTimer().delay(3000);
 					});
 				},
 				incorrectAnswers: function(){
@@ -60,25 +59,22 @@ $(document).ready(function(){
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						setTimeout(failed1, 1000);
-						nextQuestion();
-						stop();
+						failed1();
+						clearInterval(showQuestion);
 					});
 					$('#answerC').on('click', function(){
 						totalLosses++;
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						setTimeout(failed1, 1000);
-						nextQuestion();
-						stop();
+						failed1();
+						clearInterval(showQuestion);
 					});
 					$('#answerD').on('click', function(){
 						totalLosses++;	
 						$('.content').remove();
 						$('#correct-answer').html('<p>The correct answer was: "The Betrayal"');
-						setTimeout(failed1, 1000);
-						nextQuestion();
-						stop();
+						failed1();
+						clearInterval(showQuestion);
 					});
 				}
 			},
@@ -518,20 +514,26 @@ $(document).ready(function(){
 	// };
 
 	function betweenQuestion() {
-		timeInterval = setInterval(interlude, 1000);
+		prelude = setTimeout(slowAlert, 1000);
 	}
 
+	function slowAlert(){
+		secondsIntelude--;
+		failed1()
+		if (secondsIntelude === 0){
+			countDownTimer();
+		}
+	}
 
 
 	// function interlude(){
 	// 	secondsIntelude--;
-	// 	if (secondsRemaining === 0) {
+	// 	if () {
 	// 		$('.content').remove();
 	// 		failed1();
-	// 		count++;
-	// 		questionDisplay();
-	// 		secondsRemaining = 30;
+	// 		alert("next question!")
 	// 	}
+	// 	clearTimeout(prelude);
 	// }
 
 
@@ -551,11 +553,11 @@ $(document).ready(function(){
 	function countDownTimer (){
 		secondsRemaining--;
 		$("#seconds").html(secondsRemaining);
-		// interlude();
-		if (secondsRemaining === 0) {
+		if (secondsRemaining === 0) {		
 			count++;
-			questionDisplay();
+			betweenQuestion();
 			secondsRemaining = 30;
+			questionDisplay();
 		}
 	};
 
@@ -563,6 +565,7 @@ $(document).ready(function(){
 
 	function celebration1(){
 		$('#imageHolder').html('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJO2teeAvDMZvva" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+
 	};
 
 	function celebration2(){
@@ -602,7 +605,7 @@ $(document).ready(function(){
 	};
 
 	function failed1(){
-		$('#imageHolder').html('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/6Q2KA5ly49368" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+		$('#imageHolder').html('<div id="failed1" style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left:20%;"><iframe src="https://giphy.com/embed/6Q2KA5ly49368" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
 	};
 
 	function failed2(){
@@ -622,8 +625,6 @@ $(document).ready(function(){
 
 	};
 
-	
-	questionDisplay();
 
 });
 
