@@ -17,7 +17,7 @@ $(document).ready(function(){
 		questionDisplay();
 		$('#clock').show();
 		$('.content').show();
-		$('#start-button').remove();
+		$('#start-button').hide();
 	})
 
 
@@ -29,6 +29,7 @@ $(document).ready(function(){
 	var count = 0;
 	var showQuestion;
 	var prelude;
+	var correct = false;
 
 	var seinfeld = {
 
@@ -51,7 +52,7 @@ $(document).ready(function(){
 						totalWins++;
 						$('.content').remove();
 						celebration1();
-						countDownTimer().delay(3000);
+						// questionDisplay();
 					});
 				},
 				incorrectAnswers: function(){
@@ -523,6 +524,10 @@ $(document).ready(function(){
 		if (secondsIntelude === 0){
 			countDownTimer();
 		}
+		else {
+			$('#failed1').hide();
+
+		}
 	}
 
 
@@ -553,9 +558,8 @@ $(document).ready(function(){
 	function countDownTimer (){
 		secondsRemaining--;
 		$("#seconds").html(secondsRemaining);
-		if (secondsRemaining === 0) {		
+		if (secondsRemaining === 0) {	
 			count++;
-			betweenQuestion();
 			secondsRemaining = 30;
 			questionDisplay();
 		}
@@ -564,8 +568,18 @@ $(document).ready(function(){
 //===================== Celebrations GIF ============================= 	
 
 	function celebration1(){
-		$('#imageHolder').html('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJO2teeAvDMZvva" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
-
+		correct = true;
+		var showCelb1 = setInterval(countDown, 1000);
+		if (correct === true){
+			function countDown(){
+			secondsIntelude--;
+			$('#imageHolder').html('<div style="width:60%;height:0;padding-bottom:25%;position:relative; padding-left: 20%;"><iframe src="https://giphy.com/embed/l2JJO2teeAvDMZvva" width="60%" height="60%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>');
+			};
+			countDown();
+		// if (secondsIntelude === 0){
+		// 	clearInterval(showCelb1);
+		// }
+		}
 	};
 
 	function celebration2(){
